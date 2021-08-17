@@ -1,0 +1,35 @@
+POST http://localhost:5000/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "nom":"2",
+    "password":"passwordd",
+    "password2":"passwordd",
+    "email":"emailly@emailly.com",
+    "type":"cooperative",
+    "tel":"55555",
+    "adresse":"mmmmmmesghona",
+    "activite":"none",
+    "fabrication":"none",
+    "vente":"none",
+    "infos":"none"
+}
+
+###
+
+PATCH  http://localhost:5000/signup3/611a9ddf753db304f4773aec HTTP/1.1
+Content-Type: application/json
+
+{
+    "members":["member one", "member 2"]
+}
+
+###
+
+POST  http://localhost:5000/signin HTTP/1.1
+Content-Type: application/json
+
+{
+    "password":"passwordd",
+    "email":"emailly@emailly.com"
+}
